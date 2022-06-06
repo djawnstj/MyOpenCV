@@ -3,7 +3,7 @@ OpenCV 를 이용한 Adroid App
 
 <hr/>
 
-### cvtColor - 이미지 변환 함수
+### 1. cvtColor - 이미지 변환 함수
 
 * BGR : Blue, Green, Red 채널 -
 * BGRA : Blue, Green, Red, Alpha 채널 -
@@ -24,6 +24,8 @@ OpenCV 를 이용한 Adroid App
 
 <hr/>
 
-     * # threshold - 이미지 이진화 함수
-     *
-     * 영상을 스캔하면서 픽셀값이 threshlod값보다 크면 결과 영상의 같은 위치의 픽셀값을 흰색(1 또는 255)으로 하고, 픽셀값이 threshold값보다 작으면 검은색(0)으로 한다.
+### 2. threshold - 이미지 이진화 함수
+
+* 영상을 스캔하면서 픽셀값이 threshlod값보다 크면 결과 영상의 같은 위치의 픽셀값을 흰색(1 또는 255)으로 하고, 픽셀값이 threshold값보다 작으면 검은색(0)으로 한다.
+
+<hr />
