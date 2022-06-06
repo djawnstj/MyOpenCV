@@ -1,6 +1,7 @@
 OpenCV 를 이용한 Adroid App
 ===========================
 <hr/>
+
 ### cvtColor - 이미지 변환 함수
 
 ##### BGR : Blue, Green, Red 채널 -
