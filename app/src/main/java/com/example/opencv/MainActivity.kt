@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
 
     /**
      * 이미지 변환 함수
+     * @param Mat [Mat]
      * @param code [Imgproc.code]
      * @return Mat()
      * @author EJS
@@ -49,14 +50,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     /**
-     * 이미지 이진화 함수
-     * @param imageMat Mat()
+     * 이미지 전역 이진화 함수
+     * @param Mat [Mat]
      * @return Mat()
      * @author EJS
      */
-    fun convertToBinaryImage(imageMat: Mat): Mat {
+    fun Mat.convertToBinaryImage(): Mat {
         val binaryMat = Mat()
-        Imgproc.threshold(imageMat, binaryMat, 0.0, 255.0, Imgproc.THRESH_OTSU)
+        Imgproc.threshold(this, binaryMat, 0.0, 255.0, Imgproc.THRESH_OTSU)
         return binaryMat
     }
 
