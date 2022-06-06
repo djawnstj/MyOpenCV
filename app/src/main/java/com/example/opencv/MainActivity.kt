@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
      * 이미지 변환 함수
      * @param Mat [Mat]
      * @param code [Imgproc.code]
-     * @return Mat()
+     * @return [Mat]
      * @author EJS
      */
     fun Mat.convertToGrayScaleImage(code: Int): Mat {
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
     /**
      * 이미지 전역 이진화 함수
      * @param Mat [Mat]
-     * @return Mat()
+     * @return [Mat]
      * @author EJS
      */
     fun Mat.convertToBinaryImage(): Mat {
