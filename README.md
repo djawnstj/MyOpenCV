@@ -1,9 +1,9 @@
 OpenCV 를 이용한 Adroid App
 ===========================
+<hr/>
+### cvtColor - 이미지 변환 함수
 
-
-### * cvtColor - 이미지 변환 함수
-    * BGR : Blue, Green, Red 채널 -
+##### BGR : Blue, Green, Red 채널 -
 ##### BGRA : Blue, Green, Red, Alpha 채널 -
 ##### RGB : Red, Green, Blue 채널 -
 ##### RGBA : Red, Green, Blue, Alpha 채널 -
@@ -19,6 +19,7 @@ OpenCV 를 이용한 Adroid App
 ##### BG, GB, RG : 디모자이킹	- 단일 색상 공간으로 변경
 ##### _EA : 디모자이킹 - 가장자리 인식
 ##### _VNG : 디모자이킹 - 그라데이션 사용
+<hr/>
 
      * # threshold - 이미지 이진화 함수
      *
