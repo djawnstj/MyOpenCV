@@ -2,7 +2,7 @@ OpenCV 를 이용한 Adroid App
 ===========================
 
 
-#### cvtColor - 이미지 변환 함수
+### cvtColor - 이미지 변환 함수
 
 ##### BGR : Blue, Green, Red 채널 -
 ##### BGRA : Blue, Green, Red, Alpha 채널 -
