@@ -9,6 +9,8 @@ import org.opencv.android.BaseLoaderCallback
 import org.opencv.android.LoaderCallbackInterface
 import org.opencv.android.OpenCVLoader
 import org.opencv.core.Mat
+import org.opencv.core.Point
+import org.opencv.core.Scalar
 import org.opencv.imgproc.Imgproc
 
 class MainActivity : AppCompatActivity() {
@@ -59,6 +61,13 @@ class MainActivity : AppCompatActivity() {
         val binaryMat = Mat()
         Imgproc.threshold(this, binaryMat, 0.0, 255.0, Imgproc.THRESH_OTSU)
         return binaryMat
+    }
+
+    /**
+     * 직선 그리기 함수
+     */
+    fun Mat.drawingLine () {
+        Imgproc.line(this, Point(15.0, 20.0), Point(300.0, 350.0), Scalar(0.0, 255.0, 0.0), 10, 8)
     }
 
     override fun onResume() {
