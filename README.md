@@ -47,9 +47,10 @@ OpenCV 를 이용한 Adroid App
 ### 3. line - 직선 그리는 함수
 * params
   * img: 그림을 그릴 영상
-  * pt1: 시작점
-  * pt2: 끝점
-  * color: 선 색상 (B,G,R)
+  * pt1: 시작점 (Point)
+  * pt2: 끝점 (Point)
+  * color: 선 색상 Scalar(B,G,R)
   * thickness: 선 두께
   * lineType: 선 타입; LINE_8(기본값), LINE_4, LINE_AA
   * shift: 그리기 좌표 값의 축소 비율. 기본값은 0
+    (lineType - LINE_4와 LINE_8은 인접 픽셀을 4방향 중 하나로 채울지 8방향중 하나로 채울지 결정한다.)
