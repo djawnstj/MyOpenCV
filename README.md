@@ -40,11 +40,11 @@ OpenCV 를 이용한 Adroid App
   * maxval : 최대 임계값. 일반적으로 회색조 이미지의 픽셀값은 최대 255를 가지므로 보통 255로 지정한다.
   * type : 임계값 타입
     ![thresh](https://user-images.githubusercontent.com/90193598/172132997-4205395c-9937-4198-ab40-ef7ff2824da6.png)
-
-
+    
 <hr />
 
 ### 3. line - 직선 그리는 함수
+
 * params
   * img: 그림을 그릴 영상
   * pt1: 시작점 (Point)
@@ -56,3 +56,57 @@ OpenCV 를 이용한 Adroid App
       ![www charlezz com-opencv-opencv-img1 daumcdn-300x133](https://user-images.githubusercontent.com/90193598/173782441-0aae2857-cf37-44dd-aa73-a163289a9323.png)
       ![www charlezz com-opencv-opencv-img1 daumcdn-1-300x293](https://user-images.githubusercontent.com/90193598/173782494-edd1d13e-3f6f-4d04-9edd-7de2b7ac370c.png)
   * shift: 그리기 좌표 값의 축소 비율. 기본값은 0
+  
+<hr />
+
+### 4. rectangle - 사각형 그리는 함수
+
+* params
+  * img: 그림을 그릴 영상
+  * pt1: 시작점 (Point)
+  * pt2: 끝점 (Point)
+  * rec: 사각형 (Rect)
+  * color: 선 색상 Scalar(B,G,R)
+  * thickness: 선 두께
+  * lineType: 선 타입; LINE_8(기본값), LINE_4, LINE_AA
+  * shift: 그리기 좌표 값의 축소 비율. 기본값은 0
+  
+<hr />
+
+### 5. polylines - 다각형 그리는 함수
+
+* params
+  * img: 그림을 그릴 영상
+  * pts: 다각형 꼭지점의 배열
+  * isClosed: 폐곡선 여부
+  * color: 선 색상 Scalar(B,G,R)
+  * thickness: 선 두께
+  * lineType: 선 타입; LINE_8(기본값), LINE_4, LINE_AA
+  * shift: 그리기 좌표 값의 축소 비율. 기본값은 0
+
+<hr />
+
+### 6. 원 그리는 함수
+
+* params
+  * img: 그림을 그릴 영상
+  * center: 원의 중심 좌표
+  * radius: 원의 반지름
+  * color: 선 색상 Scalar(B,G,R)
+  * thickness: 선 두께
+  * lineType: 선 타입; LINE_8(기본값), LINE_4, LINE_AA
+  * shift: 그리기 좌표 값의 축소 비율. 기본값은 0
+
+<hr />
+
+### 7. 문자열 그리는 함수
+
+*params
+  * img: 원본 이미지
+  * text: 출력할 문자열
+  * org: 문자열을 출력할 위치의 좌측 하단 좌표
+  * fontFace: 폰트 종류
+  * fontScale: 폰트 크기 비율
+  * bottomLeftOrigin: true 면 좌측 하단을 원점으로 지정. 기본값은 false
+
+<hr />
