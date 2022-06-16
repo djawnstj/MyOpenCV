@@ -85,6 +85,11 @@ class MainActivity : AppCompatActivity() {
         Imgproc.circle(this, Point(130.0, 50.0), 10, Scalar(0.0, 255.0, 0.0))
     }
 
+    /** 외곽선 추출 함수 */
+    fun Mat.sample() {
+//        Imgproc.Canny()
+    }
+
     override fun onResume() {
         super.onResume()
         if (!OpenCVLoader.initDebug()) {
