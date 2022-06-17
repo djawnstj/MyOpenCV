@@ -87,7 +87,8 @@ class MainActivity : AppCompatActivity() {
 
     /** 외곽선 추출 함수 */
     fun Mat.sample() {
-//        Imgproc.Canny()
+        val mat = Mat()
+        Imgproc.Canny(this, mat, 50.0, 100.0)
     }
 
     override fun onResume() {
