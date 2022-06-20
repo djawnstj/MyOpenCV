@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConvertImageFragment"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/bgraBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BGRA" />
+
+        <RadioButton
+            android:id="@+id/rgbaBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RGBA" />
+
+        <RadioButton
+            android:id="@+id/grayBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GRAY SCALE" />
+
+        <RadioButton
+            android:id="@+id/xyzBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XYZ" />
+
+        <RadioButton
+            android:id="@+id/yccBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YCC" />
+
+        <RadioButton
+            android:id="@+id/hsvBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HSV" />
+
+        <RadioButton
+            android:id="@+id/labBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lab" />
+
+        <RadioButton
+            android:id="@+id/luvBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luv" />
+
+        <RadioButton
+            android:id="@+id/hlsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HLS" />
+
+        <RadioButton
+            android:id="@+id/yuvBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YUV" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/emd1" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -52,8 +52,8 @@ OpenCV 를 이용한 Adroid App
   * color: 선 색상 Scalar(B,G,R)
   * thickness: 선 두께
   * lineType: 선 타입; LINE_8(기본값), LINE_4, LINE_AA
-    * LINE_4와 LINE_8은 인접 픽셀을 4방향 중 하나로 채울지 8방향중 하나로 채울지 결정한다.
     * AA는 Anti-Aliasing(계단 현상 방지 기술)의 약자이다.
+    * LINE_4와 LINE_8은 인접 픽셀을 4방향 중 하나로 채울지 8방향중 하나로 채울지 결정한다.
       ![www charlezz com-opencv-opencv-img1 daumcdn-1-300x293](https://user-images.githubusercontent.com/90193598/173782494-edd1d13e-3f6f-4d04-9edd-7de2b7ac370c.png)
       ![www charlezz com-opencv-opencv-img1 daumcdn-300x133](https://user-images.githubusercontent.com/90193598/173782441-0aae2857-cf37-44dd-aa73-a163289a9323.png)
   * shift: 그리기 좌표 값의 축소 비율. 기본값은 0
@@ -116,10 +116,12 @@ OpenCV 를 이용한 Adroid App
 이미지 안의 화소치의 변화, 휘도의 변화가 커다란 부분을 검출하여 엣지를 추출하는 이미지 처리
 
 * params
-  * image : 입력 영상
+  * image : 입력 영상(주로 grayScale 을 이용)
   * edges : 출력 영상
   * threshold1 : 최소 임계값
   * threshold2 : 최대 임계값
     ![canny](https://user-images.githubusercontent.com/90193598/174196488-d4a6f07b-687f-45ae-9c88-ffa56b45e482.png)
     
 <hr />
+
+### 9. 이미지 밝기 조절 함수
