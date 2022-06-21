@@ -78,9 +78,10 @@ class ImgUtil {
         }
 
         /** 외곽선 추출 함수 */
-        fun Mat.detectCannyEdge() {
+        fun Mat.detectCannyEdge(val1: Double, val2: Double): Mat {
             val mat = Mat()
-            Imgproc.Canny(this, mat, 50.0, 100.0)
+            Imgproc.Canny(this, mat, val1, val2)
+            return mat
         }
 
         /** 이미지 밝기 조절 함수 */
