@@ -3,7 +3,8 @@ OpenCV 를 이용한 Adroid App
 
 <hr/>
 
-### 1. cvtColor - 이미지 변환 함수
+### 1. [ConvertImageFragment](https://github.com/djawnstj/MyOpenCV/blob/master/app/src/main/java/com/example/opencv/ConvertImageFragment.kt)
+## cvtColor - 이미지 변환 함수 
 
 * BGR : Blue, Green, Red 채널 -
 * BGRA : Blue, Green, Red, Alpha 채널 -
@@ -28,7 +29,8 @@ OpenCV 를 이용한 Adroid App
 
 <hr/>
 
-### 2. threshold - 이미지 전역 이진화 함수 [AppData]
+### 2. [ConvertBinaryFragment](https://github.com/djawnstj/MyOpenCV/blob/master/app/src/main/java/com/example/opencv/ConvertBinaryFragment.kt)
+## threshold - 이미지 전역 이진화 함수
 
 * 배경(Background)과 객체(Object) 구분, 관심 영역과 비관심 영역 가르기 위해 사용.
 * 일반적으로 gray scale 영상으로 함.
@@ -43,7 +45,8 @@ OpenCV 를 이용한 Adroid App
     
 <hr />
 
-### 3. line - 직선 그리는 함수
+### 3. [DrawingFragment](https://github.com/djawnstj/MyOpenCV/blob/master/app/src/main/java/com/example/opencv/DrawingFragment.kt)
+## 3-1 line - 직선 그리는 함수
 
 * params
   * img: 그림을 그릴 영상
@@ -58,9 +61,8 @@ OpenCV 를 이용한 Adroid App
       ![www charlezz com-opencv-opencv-img1 daumcdn-300x133](https://user-images.githubusercontent.com/90193598/173782441-0aae2857-cf37-44dd-aa73-a163289a9323.png)
   * shift: 그리기 좌표 값의 축소 비율. 기본값은 0
   
-<hr />
 
-### 4. rectangle - 사각형 그리는 함수
+## 3-2 rectangle - 사각형 그리는 함수
 
 * params
   * img: 그림을 그릴 영상
@@ -72,9 +74,8 @@ OpenCV 를 이용한 Adroid App
   * lineType: 선 타입; LINE_8(기본값), LINE_4, LINE_AA
   * shift: 그리기 좌표 값의 축소 비율. 기본값은 0
   
-<hr />
 
-### 5. polylines - 다각형 그리는 함수
+## 3-3. polylines - 다각형 그리는 함수
 
 * params
   * img: 그림을 그릴 영상
@@ -85,9 +86,8 @@ OpenCV 를 이용한 Adroid App
   * lineType: 선 타입; LINE_8(기본값), LINE_4, LINE_AA
   * shift: 그리기 좌표 값의 축소 비율. 기본값은 0
 
-<hr />
 
-### 6. 원 그리는 함수
+## 3-4. 원 그리는 함수
 
 * params
   * img: 그림을 그릴 영상
@@ -98,9 +98,8 @@ OpenCV 를 이용한 Adroid App
   * lineType: 선 타입; LINE_8(기본값), LINE_4, LINE_AA
   * shift: 그리기 좌표 값의 축소 비율. 기본값은 0
 
-<hr />
 
-### 7. 문자열 그리는 함수
+## 3-5. 문자열 그리는 함수
 
 * params
   * img: 원본 이미지
@@ -112,7 +111,8 @@ OpenCV 를 이용한 Adroid App
 
 <hr />
 
-### 8. 외곽선 추출 함수
+### 4. [EdgeFragment](https://github.com/djawnstj/MyOpenCV/blob/master/app/src/main/java/com/example/opencv/EdgeFragment.kt)
+## 외곽선 추출 함수
 이미지 안의 화소치의 변화, 휘도의 변화가 커다란 부분을 검출하여 엣지를 추출하는 이미지 처리
 
 * params
@@ -124,4 +124,5 @@ OpenCV 를 이용한 Adroid App
     
 <hr />
 
-### 9. 이미지 밝기 조절 함수
+### 4. [BrightnessFragment](https://github.com/djawnstj/MyOpenCV/blob/master/app/src/main/java/com/example/opencv/BrightnessFragment.kt)
+## 이미지 밝기 조절 함수
