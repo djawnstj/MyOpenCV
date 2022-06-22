@@ -3,6 +3,7 @@ package com.example.opencv
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.drawable.Drawable
+import android.widget.ImageView
 import org.opencv.android.Utils
 import org.opencv.core.*
 import org.opencv.imgproc.Imgproc
@@ -37,6 +38,8 @@ class ImgUtil {
             Utils.bitmapToMat(bitmap, mat)
             return mat
         }
+
+        fun ImageView.setImageMat(mat: Mat) = setImageBitmap(mat.toBitmap())
 
         /** 이미지 변환 함수 */
         fun Mat.convertImageType(code: Int): Mat {

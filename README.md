@@ -28,7 +28,7 @@ OpenCV 를 이용한 Adroid App
 
 <hr/>
 
-### 2. threshold - 이미지 이진화 함수
+### 2. threshold - 이미지 전역 이진화 함수 [AppData]
 
 * 배경(Background)과 객체(Object) 구분, 관심 영역과 비관심 영역 가르기 위해 사용.
 * 일반적으로 gray scale 영상으로 함.
