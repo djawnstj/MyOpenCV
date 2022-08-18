@@ -9,3 +9,7 @@
 # *.cp linguist-vendored
 # *.cxx linguist-vendored
 
+
+*.h linguist-vendored
+*.hpp linguist-vendored
+
