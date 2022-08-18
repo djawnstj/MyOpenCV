@@ -12,6 +12,6 @@
 
 *.h linguist-vendored
 *.hpp linguist-vendored
-*.CMake linguist-vendored
+*.cmake linguist-vendored
 *.txt linguist-vendored
 
