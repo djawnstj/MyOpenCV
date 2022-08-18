@@ -1,11 +1,11 @@
 # .gitattributes 파일 내용입니다.
 #  .C, .cc, .cpp, .CPP, .c++, .cp, .cxx
 
-*.C linguist-vendored
-*.cc linguist-vendored
-*.cpp linguist-vendored
-*.CPP linguist-vendored
-*.c++, linguist-vendored
-*.cp linguist-vendored
-*.cxx linguist-vendored
+# *.C linguist-vendored
+# *.cc linguist-vendored
+# *.cpp linguist-vendored
+# *.CPP linguist-vendored
+# *.c++, linguist-vendored
+# *.cp linguist-vendored
+# *.cxx linguist-vendored
 
